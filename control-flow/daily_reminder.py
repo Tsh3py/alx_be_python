@@ -18,7 +18,7 @@ match priority:
         print("Invalid priority. Please enter high, medium, or low.")
         exit()
 
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     
     if priority.lower() in ["high", "medium", "low"]:
         reminder += " that requires immediate attention today!"
