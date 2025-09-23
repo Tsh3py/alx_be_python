@@ -1,17 +1,14 @@
-def add(a, b):
-    """Return the sum of a and b."""
-    return a + b
-
-def subtract(a, b):
-    """Return the difference of a and b."""
-    return a - b
-
-def multiply(a, b):
-    """Return the product of a and b."""
-    return a * b
-
-def divide(a, b):
-    """Return the quotient of a and b. Raises ValueError on division by zero."""
-    if b == 0:
-        raise ValueError("Cannot divide by zero.")
-    return a / b
+def perform_operation(num1, num2, operation):
+   
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 == 0:
+            return 
+        return num1 / num2
+    else:
+        return 
